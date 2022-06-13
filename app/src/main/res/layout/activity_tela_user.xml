@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.TelaUser">
+
+    <TextView
+        android:id="@+id/textView_userCabecalho"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#4CAF50"
+        android:text="Nome do Usuário"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_userRegistroVendas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:onClick="sendToListaProduto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_userCabecalho"
+        app:srcCompat="@android:drawable/btn_radio"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_userProdutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:onClick="sendToHomeEstoque"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_userRegistroVendas"
+        app:srcCompat="@android:drawable/btn_radio"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_userAdicionarProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:onClick="sendToIncluirProduto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_userProdutos"
+        app:srcCompat="@android:drawable/btn_radio"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView_userRegistroVendas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:text="Registro de Vendas"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_userRegistroVendas"
+        app:layout_constraintTop_toBottomOf="@+id/textView_userCabecalho" />
+
+    <TextView
+        android:id="@+id/textView_userProdutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:text="Produtos"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_userProdutos"
+        app:layout_constraintTop_toBottomOf="@+id/textView_userRegistroVendas" />
+
+    <TextView
+        android:id="@+id/textView_userAdicionarProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:text="Adicionar produto"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_userAdicionarProduto"
+        app:layout_constraintTop_toBottomOf="@+id/textView_userProdutos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

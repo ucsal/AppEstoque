@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.IncluirProduto">
+
+    <TextView
+        android:id="@+id/textView_incluirCabecalho"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#4CAF50"
+        android:backgroundTint="#4CAF50"
+        android:text="NOVO PRODUTO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+
+    <Button
+        android:id="@+id/button_incluirIncluirProduto"
+        android:layout_width="157dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="incluirProduto"
+        android:text="Incluir"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView_incluirMensagem"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="92dp"
+        android:text="Informe os dados"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_incluirCabecalho" />
+
+    <EditText
+        android:id="@+id/editTextText_incluirInformarCodigo"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:background="@xml/rounded"
+        android:ems="10"
+        android:hint="Informe o código"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_incluirMensagem" />
+
+    <EditText
+        android:id="@+id/editTextText_incluirInformarNome"
+        android:layout_width="364dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@xml/rounded"
+        android:ems="10"
+        android:hint="Informe o nome"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_incluirInformarCodigo" />
+
+    <EditText
+        android:id="@+id/editTextNumber_incluirInformarQuantidade"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@xml/rounded"
+        android:ems="10"
+        android:hint="Informe a quantidade"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_incluirInformarNome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
